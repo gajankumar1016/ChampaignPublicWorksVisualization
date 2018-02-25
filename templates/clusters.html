@@ -14,28 +14,32 @@
       }
       /* Optional: Makes the sample page fill the window. */
       html, body {
-        height: 90%;
-        width: 90%;
+        height: 85%;
+        width: 100%;
         margin: 0;
         padding: 0;
       }
     </style>
   </head>
   <body>
-    <h1>Champaign City Work</h1>
-    <h3>Type of work: {{ type_of_work }}</h3>
-    <form action="/" method="post">
-      <input type="radio" name="citywork" value="flood" required="required"> Flooding
-      <input type="radio" name="citywork" value="sewer backup"> Sewer
-      <input type="radio" name="citywork" value="pick up dead animal">Dead Animals
-      <input type="submit" value="Submit">
+    <div id="description" style="text-align: center; width: 700px; margin: auto; display: inline; float: none;">
+      <h1>Champaign City Work</h1>
+      <h2>(2009 - 2017)</h2>
+      <h3>Type of work: {{ type_of_work }}</h3>
+      <form action="/" method="post">
+        <input type="radio" name="citywork" value="flood" required="required"> Flooding
+        <input type="radio" name="citywork" value="sewer backup"> Sewer
+        <input type="radio" name="citywork" value="pick up dead animal">Dead Animals
+        <input type="radio" name="citywork" value="pothole repair">Pothole Repair
+        <input type="submit" value="Submit">
+
+        <br>
+      </form>
 
       <br>
-    </form>
+    </div>
 
-    <br>
-
-    <div id="map"></div>
+    <div id="map" style="text-align: center"></div>
     <script>
 
       function initMap() {

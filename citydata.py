@@ -27,7 +27,7 @@ def getCoordinates(keyword="flood"):
 				locations_list.append({"lat":(float(line['SRX'].replace(',', ''))), "lng":(float(line['SRY'].replace(',', '')))})
 
 	#pprint.pprint(dict_list[0]['DESCRIPTION'])
-	pprint.pprint(locations_list)
+	#pprint.pprint(locations_list)
 	#print(len(dict_list))
 	#print(len(locations_list))
 	return locations_list
