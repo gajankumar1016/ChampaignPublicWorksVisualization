@@ -12,6 +12,7 @@ SIEBEL = SIEBEL_LAT, SIEBEL_LNG
 
 @app.route("/", methods=['GET', 'POST'])
 def index():
+	#The map will be centered at the coordinates for the Siebel Center
 	lat = SIEBEL_LAT
 	lng = SIEBEL_LNG
 
