@@ -27,4 +27,4 @@ def index():
 		return render_template('clusters.html', MAPS_API_KEY=MAPS_API_KEY, lat=lat, lng=lng, origLocations=json.dumps(origLocations), type_of_work="flood")
 
 if __name__ == "__main__":
-	app.run(debug=True)
+	app.run()
